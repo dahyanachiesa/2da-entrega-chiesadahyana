@@ -1,73 +1,199 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    
 }
-
+    
+    
 /*HEADER*/
 
-.img-logo{
-    text-align: center;
+.topbar {
+    display: flex;
+    flex-direction: row;
 }
 
-.barra-nav {
-    /*border-top: 1px solid #a3a2a2;
-    border-bottom: 1px solid #a3a2a2;*/
-    background-color: #d6d1d1;
-    text-align: center;
+.topbar__container {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
 }
 
-.menu-superior{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.topbar__menu {
+    order: -2;
+    margin-left: auto;
+}
+
+.topbar__links {
+    width: auto;    
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #f0f0f0; 
+    border-radius: 5px;     
 }
 
 
-.menu-superior li a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
+/*Mq Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    .topbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topbar__menu {
+        margin-left: 10px;
+    }
+    
+        .topbar__links {
+            width: auto;
+            margin-left: 10px;
+        }
+
+        .topbar__links a{
+            margin:8px;
+        }
 }
 
-.img-portada img {
-    margin-top: 15px;
-    height: 400px;
-    width: 100%;
+/*Mq Mobile*/
+@media (max-width:767px){
+    .topbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .topbar__menu {
+        margin-left: 10px;
+    }
+    
+        .topbar__links {
+            width: auto;
+            margin-left: 10px;
+        }
+
+        .topbar__links a{
+            margin:8px;
+        }
 }
 
 /*MAIN*/
 
 /*INDEX*/
-main h1 {
-    font-size: 25px;
+
+/*Carousel*/
+.galeria__contenedor .galeria__item{
+    object-fit: cover;
+}
+
+.galeria__item img{
+    margin-top: 10px;
+    max-height: 400px;
+    max-width: 100%;    
+}
+
+/*Categorias*/
+.bloque__titulo {
     margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 30px;
     text-align: center;
+    background-color: #ddd6d6;
 }
 
-.categorias {
-    text-align: center;
+.bloque__contenedor {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
 
-.contenedor-categorias {
-    width: 350px;
+.bloque__categoria {    
+    text-align: center; 
+    width: 40%;
+
 }
 
-.img-categorias img{
+.bloque__categoria a{    
+    color: black; 
+    font-weight: bold;  
+}
+
+.bloque__recuadro {
+    height: 250px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    display: inline-block;
     width: 100%;
+}
+
+.bloque__recuadro img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.bloque__recuadro figcaption{
+    font-size: 20px;
+}
+
+/* Mq Tablet */
+@media (min-width:768px) and (max-width:991px){
+    .bloque__titulo{
+        margin-top: 26px;
+        margin-bottom: 26px;
+        padding: 8px;
+        font-size: 26px;
+    }
+
+    .bloque__recuadro {
+        height: 200px;
+    }
+
+    .bloque__recuadro img{
+        max-width: 250px;
+    }
+
+    .bloque__recuadro figcaption{
+        font-size: 18px;
+    }
+}
+
+/* Mq Mobile */
+@media screen and (max-width: 768px) {
+    .bloque__titulo{
+        margin-top: 22px;
+        margin-bottom: 22px;
+        padding: 6px;
+        font-size: 24px;
+    }
+
+    .bloque__contenedor {
+        flex-wrap: nowrap;
+    }    
+
+    .bloque__categoria {
+        width: 100%;
+    }
+
+    .bloque__recuadro {
+        height: 250px;
+    }
+
+    .bloque__recuadro img {
+        max-width: 200px;
+    }
+
+    .bloque__recuadro figcaption{
+        font-size: 16px;
+    }
 } 
-
-.img-categorias figcaption{
-    width: 100%;
-    font-size: 25px;
-}
 
 /*PRODUCTOS*/
 
 .contenido {
-    width: 250px;
+    /*width: 250px;*/
     text-align: center;
 }
 
@@ -157,11 +283,11 @@ main h1 {
 
 /*CONTACTO*/
 
-.form-contacto {
+.contacto {
     text-align: center;
 }
 
-.form-contacto h1 {
+.contacto__title {
     margin-top: 30px;
     padding: 10px;
     font-size: 30px;
@@ -169,88 +295,170 @@ main h1 {
     color: #ffffff;
 }
 
-.form-contacto form {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.casilla {
-    margin-bottom: 20px;
+/* Estilos de las casillas */
+.contacto__casilla--nombre,
+.contacto__casilla--correo, 
+.contacto__casilla--mensaje {    
+    width: 100%;
+    max-width: 400px;
 }
 
-.casilla input {
-    width: 400px;
-    height: 30px;
+.contacto__casilla--nombre input[type="text"],
+.contacto__casilla--correo input[type="email"],
+.contacto__casilla--mensaje textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ac9e9e;
+    border-radius: 5px;
 }
 
-.casilla textarea {
-    width: 400px;
-}
-
-.form-contacto form button {
-    width: 400px;
-    height: 25px;
+.contacto__form button {
+    max-width: 400px; 
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    padding: 10px;
     background-color: #585be7;
     color: #ffffff;
     border: none;
+    border-radius: 5px;
+}
+
+/*Mq mobile*/
+@media screen and (max-width: 767px) {
+    .contacto__title {
+        font-size: 24px;
+    }
+
+    .contacto__form button {
+        height: 35px;
+        padding: 8px; /* Ajustamos el padding */
+    }
+}
+
+/*Mq Tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .contacto__title {
+        font-size: 28px;
+    }
+
+    .contacto__form button {
+        height: 38px;
+        padding: 10px;
+    }
 }
 
 /*ASIDE*/
 
-.nuevos-ingresos {
-    margin-top: 20px;
-    border-top: 2px solid #a1a0a0;
-    border-bottom: 2px solid #a1a0a0;
-}
-
-.nuevos-ingresos h2{
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-.img-newin {
-    width: 250px;
-    margin-bottom: 10px;
-}
-
-.img-newin img {
-    width: 100%;
-}
-
-.img-newin figcaption {
-    font-size: 20px;
-    text-align: center;
-}
-
-.fabricantes {
-    text-align: center;
-}
-
-.fabricantes img {
+.apartado {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
+.apartado__img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+    max-height: 350px;
+}
+
+/* Mq Mobile */
+@media screen and (max-width: 767px) {
+    .apartado__img {
+        max-height: 250px;
+    }
+}
+/* Mq tablet */
+@media (min-width:768px) and (max-width: 991px) {
+
+    .apartado__img {
+        max-height: 300px;
+    }
+}
+
 /*FOOTER*/
 
-/*falta mover todo a su lugar*/
-
-footer{
+.footbox {
     background-color: #000000;
     color: #ffffff;
+    max-height: 350px;
+    height: 100%;
 }
 
-.menu-inferior li a{
-    color: #ffffff;
-    text-decoration: none;
+.footbox__contacto, .footbox__pago {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.img-pago img {
-    width: 40px;
-    height: 25px;
+.footbox__title {
+    font-size: 18px;
 }
 
+.footbox__info {
+    margin-bottom: 0;
+    font-size: 14px;
+}
 
+.footbox__icono {
+    max-width: 50px;
+    max-height: 50px;
+}
 
+/* Mq tablet */
+@media (min-width:768px) and (max-width: 991px) {
+    .footbox{
+        max-height: 300px;
+    }
+    
+    .footbox__contacto, .footbox__pago {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .footbox__title {
+        font-size: 16px;
+    }
+    
+    .footbox__info {
+        font-size: 14px;
+    }
+    
+    .footbox__icono {
+        max-width: 40px;
+        max-height: 40px;
+    }
+}
+/* Mq mobile */
+@media screen and (max-width: 767px) {
+    .footbox{
+        max-height: 250px;
+    }
+    .footbox__contacto, .footbox__pago {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .footbox__title {
+        font-size: 14px;
+    }
+    
+    .footbox__info {
+        font-size: 12px;
+    }
+    
+    .footbox__icono {
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
