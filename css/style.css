@@ -4,20 +4,18 @@
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
-    
-    
-/*HEADER*/
 
+/*HEADER*/
 .topbar {
     display: flex;
     flex-direction: row;
 }
 
 .topbar__container {
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .topbar__menu {
@@ -32,50 +30,6 @@ width: 100%;
 .navbar-nav .nav-link:hover {
     background-color: #f0f0f0; 
     border-radius: 5px;     
-}
-
-
-/*Mq Tablet*/
-@media (min-width: 768px) and (max-width: 991px) {
-    
-    .topbar {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .topbar__menu {
-        margin-left: 10px;
-    }
-    
-        .topbar__links {
-            width: auto;
-            margin-left: 10px;
-        }
-
-        .topbar__links a{
-            margin:8px;
-        }
-}
-
-/*Mq Mobile*/
-@media (max-width:767px){
-    .topbar {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .topbar__menu {
-        margin-left: 10px;
-    }
-    
-        .topbar__links {
-            width: auto;
-            margin-left: 10px;
-        }
-
-        .topbar__links a{
-            margin:8px;
-        }
 }
 
 /*MAIN*/
@@ -112,7 +66,6 @@ width: 100%;
 .bloque__categoria {    
     text-align: center; 
     width: 40%;
-
 }
 
 .bloque__categoria a{    
@@ -137,58 +90,6 @@ width: 100%;
 .bloque__recuadro figcaption{
     font-size: 20px;
 }
-
-/* Mq Tablet */
-@media (min-width:768px) and (max-width:991px){
-    .bloque__titulo{
-        margin-top: 26px;
-        margin-bottom: 26px;
-        padding: 8px;
-        font-size: 26px;
-    }
-
-    .bloque__recuadro {
-        height: 200px;
-    }
-
-    .bloque__recuadro img{
-        max-width: 250px;
-    }
-
-    .bloque__recuadro figcaption{
-        font-size: 18px;
-    }
-}
-
-/* Mq Mobile */
-@media screen and (max-width: 768px) {
-    .bloque__titulo{
-        margin-top: 22px;
-        margin-bottom: 22px;
-        padding: 6px;
-        font-size: 24px;
-    }
-
-    .bloque__contenedor {
-        flex-wrap: nowrap;
-    }    
-
-    .bloque__categoria {
-        width: 100%;
-    }
-
-    .bloque__recuadro {
-        height: 250px;
-    }
-
-    .bloque__recuadro img {
-        max-width: 200px;
-    }
-
-    .bloque__recuadro figcaption{
-        font-size: 16px;
-    }
-} 
 
 /*PRODUCTOS*/
 
@@ -331,30 +232,6 @@ width: 100%;
     border-radius: 5px;
 }
 
-/*Mq mobile*/
-@media screen and (max-width: 767px) {
-    .contacto__title {
-        font-size: 24px;
-    }
-
-    .contacto__form button {
-        height: 35px;
-        padding: 8px; /* Ajustamos el padding */
-    }
-}
-
-/*Mq Tablet*/
-@media (min-width: 768px) and (max-width: 991px) {
-    .contacto__title {
-        font-size: 28px;
-    }
-
-    .contacto__form button {
-        height: 38px;
-        padding: 10px;
-    }
-}
-
 /*ASIDE*/
 
 .apartado {
@@ -367,20 +244,6 @@ width: 100%;
     height: auto; 
     display: block; 
     max-height: 350px;
-}
-
-/* Mq Mobile */
-@media screen and (max-width: 767px) {
-    .apartado__img {
-        max-height: 250px;
-    }
-}
-/* Mq tablet */
-@media (min-width:768px) and (max-width: 991px) {
-
-    .apartado__img {
-        max-height: 300px;
-    }
 }
 
 /*FOOTER*/
@@ -415,50 +278,178 @@ width: 100%;
     max-height: 50px;
 }
 
-/* Mq tablet */
-@media (min-width:768px) and (max-width: 991px) {
-    .footbox{
-        max-height: 300px;
-    }
-    
-    .footbox__contacto, .footbox__pago {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
 
-    .footbox__title {
-        font-size: 16px;
+/*Mq Tablet*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+    /*HEADER*/
+        .topbar {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .topbar__menu {
+            margin-left: 10px;
+        }
+    
+        .topbar__links {
+            width: auto;
+            margin-left: 10px;
+        }
+    
+        .topbar__links a{
+            margin: 8px;
+        }
+    
+    /*MAIN-INDEX*/
+    /*Categorias*/
+        .bloque__titulo{
+            margin-top: 26px;
+            margin-bottom: 26px;
+            padding: 8px;
+            font-size: 26px;
+        }
+    
+        .bloque__recuadro {
+            height: 200px;
+        }
+    
+        .bloque__recuadro img{
+            max-width: 250px;
+        }
+    
+        .bloque__recuadro figcaption{
+            font-size: 18px;
+        }
+    
+    /*CONTACTO*/
+        .contacto__title {
+            font-size: 28px;
+        }
+    
+        .contacto__form button {
+            height: 38px;
+            padding: 10px;
+        }
+    
+    /*ASIDE*/
+        .apartado__img {
+            max-height: 300px;
+        }
+    
+    /*FOOTER*/
+        .footbox{
+            max-height: 300px;
+        }
+    
+        .footbox__contacto, .footbox__pago {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    
+        .footbox__title {
+            font-size: 16px;
+        }
+    
+        .footbox__info {
+            font-size: 14px;
+        }
+    
+        .footbox__icono {
+            max-width: 40px;
+            max-height: 40px;
+        }
     }
     
-    .footbox__info {
-        font-size: 14px;
+    /*Mq Mobile*/
+    
+    @media (max-width:767px){
+    
+    /*HEADER*/
+        .topbar {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .topbar__menu {
+            margin-left: 10px;
+        }
+        
+        .topbar__links {
+            width: auto;
+            margin-left: 10px;
+        }
+    
+        .topbar__links a{
+            margin: 8px;
+        }
+    
+    /*MAIN-INDEX*/
+    /*Categorias*/
+        .bloque__titulo{
+            margin-top: 22px;
+            margin-bottom: 22px;
+            padding: 6px;
+            font-size: 24px;
+        }
+    
+        .bloque__contenedor {
+            flex-wrap: nowrap;
+        }    
+    
+        .bloque__categoria {
+            width: 100%;
+        }
+    
+        .bloque__recuadro {
+            height: 250px;
+        }
+    
+        .bloque__recuadro img {
+            max-width: 200px;
+        }
+    
+        .bloque__recuadro figcaption{
+            font-size: 16px;
+        }
+    
+    /*CONTACTO*/
+        .contacto__title {
+            font-size: 24px;
+        }
+    
+        .contacto__form button {
+            height: 35px;
+            padding: 8px;
+        }
+    
+    /*ASIDE*/
+        .apartado__img {
+            max-height: 250px;
+        }
+    
+    /*FOOTER*/
+        .footbox{
+            max-height: 250px;
+        }
+
+        .footbox__contacto, .footbox__pago {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    
+        .footbox__title {
+            font-size: 14px;
+        }
+    
+        .footbox__info {
+            font-size: 12px;
+        }
+    
+        .footbox__icono {
+            max-width: 30px;
+            max-height: 30px;
+        }    
     }
     
-    .footbox__icono {
-        max-width: 40px;
-        max-height: 40px;
-    }
-}
-/* Mq mobile */
-@media screen and (max-width: 767px) {
-    .footbox{
-        max-height: 250px;
-    }
-    .footbox__contacto, .footbox__pago {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    
-    .footbox__title {
-        font-size: 14px;
-    }
-    
-    .footbox__info {
-        font-size: 12px;
-    }
-    
-    .footbox__icono {
-        max-width: 30px;
-        max-height: 30px;
-    }
-}
