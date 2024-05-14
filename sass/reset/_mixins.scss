@@ -1,0 +1,44 @@
+@mixin titulos_desktop{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 25px;
+    background-color: $bgc-titulos-principales;
+    color: $color-titulos-principales;
+    text-align: center;
+}
+@mixin titulos_tablet{
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 20px;
+}
+@mixin titulos_mobile{
+    margin-bottom: 20px;
+    padding: 6px;
+    font-size: 16px;
+}
+@mixin orden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@mixin tamaño-maximo ($mw, $mh){
+    max-width: $mw;
+    max-height: $mh;
+}
+@mixin dimensiones ($w, $h){
+    width: $w;
+    height: $h;
+}
+@mixin margenes ($t, $r, $b, $l){
+    margin-top: $t;
+    margin-right: $r;
+    margin-bottom: $b;
+    margin-left: $l;
+}
+@mixin relleno($sup, $der, $inf, $izq){
+    padding-top: $sup;
+    padding-right: $der;
+    padding-bottom: $inf;
+    padding-left: $izq;
+}

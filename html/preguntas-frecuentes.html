@@ -3,102 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preguntas frecuentes</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--estilos-->
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Preguntas Frecuentes</title>
 </head>
 <body>
-    <header>
-        <div class="img-logo">
-            <img src="../assets/logo.png" alt="logo">
-        </div>
-        <div>
-            <nav class="barra-nav">
-                <ul class="menu-superior">
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="productos.html">PRODUCTOS</a></li>
-                    <li><a href="la-empresa.html">LA EMPRESA</a></li>
-                    <li><a href="preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a></li>
-                    <li><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="topbar"> 
+        <nav class="navbar navbar-expand-lg">
+            <div class="topbar__container">
+                <!--Logo version desktop-->
+                <div class="topbar__logo">
+                    <a href="../index.html" class="topbar__logo--desktop img-fluid d-none d-lg-block mt-3">
+                        <img src="../assets/logo.png" alt="Logo">
+                    </a>
+                </div>
+                <!--Logo version mobile y tablet-->
+                <div>
+                    <a href="../index.html" class="topbar__logo--mobile img-fluid d-lg-none">
+                        <img src="../assets/logo1.png" alt="logo">
+                    </a>
+                </div>
+            </div>  
+            <div>        
+                <!--boton del menu hamburguesa-->
+                <div class="topbar__menu">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon navbar-brand d-lg-none "></span>
+                    </button>
+                    <a class="navbar-brand d-lg-none " href="#">PRAGA HOME & DECO</a>
+                </div>
+                <div class="topbar__links collapse navbar-collapse" id="navbarNavDropdown">                        
+                    <ul class="navbar-nav topbar__lista">
+                        <li class="nav-item">                                
+                            <a class="nav-link topbar__enlace" aria-current="page" href="../index.html">INICIO</a>
+                        </li>                                
+                        <li class="nav-item dropdown">                                
+                            <a class="nav-link dropdown-toggle topbar__enlace" href="productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Sofás</a></li>
+                                <li><a class="dropdown-item" href="#">Esquineros</a></li>
+                                <li><a class="dropdown-item" href="#">Individuales</a></li>
+                                <li><a class="dropdown-item" href="#">Puffs</a></li>
+                                <li><a class="dropdown-item" href="productos.html">Todos los productos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">                                
+                            <a class="nav-link topbar__enlace" href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">                                
+                            <a class="nav-link active topbar__enlace" href="preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a>
+                        </li>
+                        <li class="nav-item">                                
+                            <a class="nav-link topbar__enlace" href="contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>    
     </header>
     <main>
-        <section class="preguntas-frecuentes">
-            <h1>PREGUNTAS FRECUENTES</h1>
-            <article class="text">
+        <section class="preguntas">
+            <h1 class="preguntas__titulo">PREGUNTAS FRECUENTES</h1>
+            <article class="preguntas__contenido">
                 <h3>1- ¿Qué tipo de material utilizan para la tapicería?</h3>
                 <p>Utilizamos una variedad de materiales de alta calidad para la tapicería de nuestros sofás, que incluyen tela, cuero genuino y cuero sintético.</p>
             </article>
-            <article class="text">
+            <article class="preguntas__contenido">
                 <h3>2- ¿Ofrecen opciones de personalización?</h3>
                 <p>Sí, ofrecemos opciones de personalización para muchos de nuestros sofás, incluyendo la posibilidad de elegir entre diferentes telas, colores y configuraciones de almohadones. Para ello comunicate con nuestro equipo de atención al cliente para obtener más detalles sobre las opciones de personalización disponibles.</p>
             </article>
-            <article class="text">
+            <article class="preguntas__contenido">
                 <h3>3- ¿El sofá viene ensamblado o se entrega desmontado?</h3>
                 <p>La mayoría de nuestros sofás se entregan ensamblados, pero algunos pueden requerir un montaje mínimo. La información sobre el montaje se proporciona en la descripción del producto y también se discute durante el proceso de compra.</p>
             </article>
-            <article class="text">
+            <article class="preguntas__contenido">
                 <h3>4- ¿Cómo se realiza el mantenimiento y la limpieza del sofá?</h3>
                 <p>Proporcionamos instrucciones detalladas sobre cómo cuidar y limpiar tu sofá en la documentación que acompaña al producto. También puedes encontrar consejos útiles en nuestra sección de cuidado y mantenimiento en línea.</p>
             </article>
-            <article class="text">
+            <article class="preguntas__contenido">
                 <h3>5- ¿Cuál es el tiempo estimado de entrega?</h3>
                 <p>El tiempo de entrega varía según la disponibilidad del producto y tu ubicación. Por lo general, el tiempo estimado de entrega se indica durante el proceso de compra y también puedes obtener más información contactando con nuestro equipo de atención al cliente.</p>
             </article>
-            <article class="text">
+            <article class="preguntas__contenido">
                 <h3>6- ¿Cómo realizo mi compra?</h3>
                 <p>Las compras pueden realizarse contactándose a nuestro teléfono (351-000000) donde un asesor despejará todas sus dudas o en nuestro local (Sarmiento 61- Córdoba Capital)</p>
             </article>
-            <article class="text">
+            <article class="preguntas__contenido">
                 <h3>7- ¿Cuáles son los medios de pago aceptados?</h3>
                 <p>Aceptamos tarjetas de crédito y débito Visa, MasterCard, American Express, así como Mercado Pago y transferencias bancarias.</p>
             </article>
-            <article class="text">
+            <article class="preguntas__contenido">
                 <h3>8- ¿Qué opciones de financiamiento ofrecen?</h3>
                 <p>Ofrecemos varias opciones de financiamiento para facilitar la compra de nuestros sofás. Puedes obtener más información sobre estas opciones durante el proceso de compra o contactando con nuestro equipo de atención al cliente.</p>
             </article>
-            <article class="text">
+            <article class="preguntas__contenido">
                 <h3>9- ¿Ofrecen garantía?</h3>
                 <p>Sí, todos nuestros sofás vienen con una garantía de calidad que cubre defectos de fabricación y problemas relacionados con el material durante un período específico de tiempo.</p>
             </article>
-            <article class="text">
+            <article class="preguntas__contenido">
                 <h3>10- ¿Cuál es la política de devolución?</h3>
                 <p>Tenemos una política de devolución que te permite devolver tu sofá dentro de un período determinado si no estás completamente satisfecho con tu compra. </p>
             </article>
         </section>
     </main>
-
     <footer>
-        <section class="nav-footer">
-            <nav>
-                <ul class="menu-inferior">
-                    <li>CATEGORÍAS</li>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="la-empresa.html">La empresa</a></li>
-                    <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="conectados">
-            <h3>SIGAMOS CONECTADOS</h3>
-            <div class="datos-contacto">
-                <p>Whatsapp: 351-0000000</p>
-                <p>Instagram: praga.homedeco</p>
-                <p>Email:pragahomedeco@gmail.com</p>
-            </div>
-        </section>
-        <section class="pago">
-            <h3>MEDIOS DE PAGO</h3>
-            <div class="img-pago">
-                <img src="../assets/icono-visa.png" alt="visa">
-                <img src="../assets/icono-mastercard.png" alt="mastercard">
-                <img src="../assets/icono-american.png" alt="american">
-                <img src="../assets/icono-mercadopago.png" alt="mercado-pago">
-            </div>
-        </section>        
+        <div class="footbox">    
+            <article class="footbox__contacto">
+                <h3 class="footbox__title">SIGAMOS CONECTADOS</h3>
+                <p class="footbox__info">Whatsapp: 351-0000000</p>
+                <p class="footbox__info">Instagram: praga.homedeco</p>
+                <p class="footbox__info">Email: pragahomedeco@gmail.com</p>
+            </article>        
+            <article class="footbox__pago">
+                <h3 class="footbox__title">MEDIOS DE PAGO</h3>
+                <div class="footbox__iconos">
+                    <img class="footbox__icono" src="../assets/icono-visa.png" alt="Icono visa">
+                    <img class="footbox__icono" src="../assets/icono-mastercard.png" alt="Icono mastercard">
+                    <img class="footbox__icono" src="../assets/icono-american.png" alt="Icono American Express">
+                    <img class="footbox__icono" src="../assets/icono-mercadopago.png" alt="Icono Mercado Pago">
+                </div>    
+            </article>  
+        </div>
     </footer>
+    <!--script bs-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

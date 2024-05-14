@@ -1,0 +1,155 @@
+/*MAIN*/
+/*INDEX*/
+/*Carousel*/
+.galeria{
+    &__contenedor &__item{
+        img{
+            @include tamaño-maximo(100%, none);
+            @include dimensiones (none, auto);
+        }
+    }
+}    
+/*Categorias*/
+.bloque{    
+    &__titulo {
+        @include titulos_desktop;
+    }
+    &__contenedor {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+    &__categoria {    
+        text-align: center; 
+        @include dimensiones (40%, none);
+            a{    
+                color: $enlaces-categorias;
+                font-weight: bold;
+            }          
+    }
+    &__recuadro {    
+        @include margenes (none, 20px, o, none);
+        display: inline-block;
+        @include dimensiones (100%, 250px);
+            &__recuadro--aumento {
+                transition: transform 0.5s;                     
+            }
+            img{
+                @include tamaño-maximo (300px, none);
+                @include dimensiones (100%, auto)
+            }
+            figcaption{
+                font-size: 20px;
+            }
+    }
+    .recuadro--aumento:hover{
+        transform: scale(1.1);
+    }  
+}
+/*PRODUCTOS*/
+.productos{
+    &__titulo {
+        @include titulos_desktop;
+    }
+}
+.tarjeta{
+    @include margenes (30px, none, 30px, none);
+    &__contenedor {
+        img{  
+        @include tamaño-maximo (300px, 250px);
+        @include dimensiones (100%, 100%);
+        text-align: center;
+        }
+    }
+    &__info{
+        @include orden;
+    }
+    &__nombre{
+        font-size: 20px;
+    }
+    &__boton{
+        background-color: $color-boton-productos;
+        border: none;
+        @include dimensiones (250px, none);     
+    }
+    &__boton:hover{
+        background-color: $hover-boton-productos;
+    }
+}
+/*NOSOTROS*/
+.nosotros{
+    &__titulo {
+        @include titulos_desktop;
+    }
+    &__intro{
+        text-align: center;
+        @include orden;
+        p {
+            font-size: 25px;
+            @include margenes (none, none, 20px, none);
+        }
+        img {    
+            @include dimensiones (90%, 450px)
+        }
+    }
+    &__descripcion{
+        p{    
+            margin: map-get($margin-p-nosotros, desktop);
+            font-size: 18px;
+            text-align: justify;
+        }
+    }
+}
+/*PREGUNTAS FRECUENTES*/
+.preguntas{
+    &__titulo{
+        @include titulos_desktop;   
+    }
+    &__contenido {
+        @include margenes (20px, 60px, 20px, 60px);
+        h3{
+            font-size: 20px;
+            text-align: start;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+    }
+}
+/*CONTACTO*/
+.contacto {
+    &__title {
+        @include titulos_desktop;
+    }
+    &__form {
+        @include orden;
+        @include margenes (none, none, 30px, none);
+    }
+    &__casilla--nombre,
+    &__casilla--correo, 
+    &__casilla--mensaje {  
+        @include tamaño-maximo (400px, none);
+        @include dimensiones (100%, none);
+        @include margenes (none, none, 10px, none);
+    }
+    &__input--nombre,
+    &__input--email,
+    &__textarea {        
+        box-sizing: border-box;
+        border: 1px solid $color-bordes-form;
+        border-radius: 5px;
+        @include margenes (10px, none, none, none);
+        @include dimensiones (100%, none);
+    }
+    &__boton {
+        @include tamaño-maximo (400px, none);
+        @include dimensiones (100%, 40px);
+        @include margenes (10px, none, none, none);
+        padding: 10px;
+        background-color: $color-boton-form;
+        color: $texto-boton-form;
+        border: none;
+        border-radius: 5px;
+    }
+}

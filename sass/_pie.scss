@@ -1,0 +1,25 @@
+/*FOOTER*/
+.footbox {
+    background-color: $fondo-pie;
+    color: $color-texto-pie;
+    @include tamaño-maximo (none, 350px);
+    @include dimensiones (none, 100%);
+    &__contacto, &__pago{
+        @include relleno (25px, none, 25px, none);
+        @include orden;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: map-get($titulo-pie, tamaño-desktop);
+    }
+
+    &__info {
+        @include margenes (none, none, 0, none);
+        font-size: map-get($info-pie, size-1);
+    }
+    
+    &__icono {
+        @include tamaño-maximo (50px, 50px);
+    }
+}

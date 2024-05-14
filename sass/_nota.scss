@@ -1,0 +1,10 @@
+/*ASIDE*/
+.apartado {
+    &__contenedor{        
+        @include tamaño-maximo (1400px, none);
+        @include margenes (20px, none, none, none);
+    }       
+    &__img {
+        @include dimensiones (100%, auto);
+    }
+}

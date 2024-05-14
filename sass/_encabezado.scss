@@ -1,0 +1,20 @@
+.topbar {
+    display: flex;
+    flex-direction: row;    
+    &__container {
+        @include orden;
+        @include dimensiones (100%, none);       
+    }  
+    &__menu {
+        order: -2;
+        @include margenes (none, none, none, auto);
+    }   
+    &__links {
+        @include dimensiones (auto, none);
+        @include margenes (none, auto, none, auto);
+    }    
+    &__enlace:hover {
+        background-color: $color-hover-nav; 
+        border-radius: 5px;     
+    }
+}

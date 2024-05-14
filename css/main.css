@@ -1,0 +1,569 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+}
+.topbar__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: none;
+}
+.topbar__menu {
+  order: -2;
+  margin-top: none;
+  margin-right: none;
+  margin-bottom: none;
+  margin-left: auto;
+}
+.topbar__links {
+  width: auto;
+  height: none;
+  margin-top: none;
+  margin-right: auto;
+  margin-bottom: none;
+  margin-left: auto;
+}
+.topbar__enlace:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+/*MAIN*/
+/*INDEX*/
+/*Carousel*/
+.galeria__contenedor .galeria__item img {
+  max-width: 100%;
+  max-height: none;
+  width: none;
+  height: auto;
+}
+
+/*Categorias*/
+.bloque__titulo {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 25px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+.bloque__contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.bloque__categoria {
+  text-align: center;
+  width: 40%;
+  height: none;
+}
+.bloque__categoria a {
+  color: #000000;
+  font-weight: bold;
+}
+.bloque__recuadro {
+  margin-top: none;
+  margin-right: 20px;
+  margin-bottom: o;
+  margin-left: none;
+  display: inline-block;
+  width: 100%;
+  height: 250px;
+}
+.bloque__recuadro__recuadro--aumento {
+  transition: transform 0.5s;
+}
+.bloque__recuadro img {
+  max-width: 300px;
+  max-height: none;
+  width: 100%;
+  height: auto;
+}
+.bloque__recuadro figcaption {
+  font-size: 20px;
+}
+.bloque .recuadro--aumento:hover {
+  transform: scale(1.1);
+}
+
+/*PRODUCTOS*/
+.productos__titulo {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 25px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+
+.tarjeta {
+  margin-top: 30px;
+  margin-right: none;
+  margin-bottom: 30px;
+  margin-left: none;
+}
+.tarjeta__contenedor img {
+  max-width: 300px;
+  max-height: 250px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.tarjeta__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tarjeta__nombre {
+  font-size: 20px;
+}
+.tarjeta__boton {
+  background-color: #da8cc6;
+  border: none;
+  width: 250px;
+  height: none;
+}
+.tarjeta__boton:hover {
+  background-color: #c966b0;
+}
+
+/*NOSOTROS*/
+.nosotros__titulo {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 25px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+.nosotros__intro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nosotros__intro p {
+  font-size: 25px;
+  margin-top: none;
+  margin-right: none;
+  margin-bottom: 20px;
+  margin-left: none;
+}
+.nosotros__intro img {
+  width: 90%;
+  height: 450px;
+}
+.nosotros__descripcion p {
+  margin: 20px 80px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+/*PREGUNTAS FRECUENTES*/
+.preguntas__titulo {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 25px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+.preguntas__contenido {
+  margin-top: 20px;
+  margin-right: 60px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+.preguntas__contenido h3 {
+  font-size: 20px;
+  text-align: start;
+}
+.preguntas__contenido p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+/*CONTACTO*/
+.contacto__title {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  font-size: 25px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+}
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: none;
+  margin-right: none;
+  margin-bottom: 30px;
+  margin-left: none;
+}
+.contacto__casilla--nombre, .contacto__casilla--correo, .contacto__casilla--mensaje {
+  max-width: 400px;
+  max-height: none;
+  width: 100%;
+  height: none;
+  margin-top: none;
+  margin-right: none;
+  margin-bottom: 10px;
+  margin-left: none;
+}
+.contacto__input--nombre, .contacto__input--email, .contacto__textarea {
+  box-sizing: border-box;
+  border: 1px solid #ac9e9e;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-right: none;
+  margin-bottom: none;
+  margin-left: none;
+  width: 100%;
+  height: none;
+}
+.contacto__boton {
+  max-width: 400px;
+  max-height: none;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  margin-right: none;
+  margin-bottom: none;
+  margin-left: none;
+  padding: 10px;
+  background-color: #5457f0;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+/*ASIDE*/
+.apartado__contenedor {
+  max-width: 1400px;
+  max-height: none;
+  margin-top: 20px;
+  margin-right: none;
+  margin-bottom: none;
+  margin-left: none;
+}
+.apartado__img {
+  width: 100%;
+  height: auto;
+}
+
+/*FOOTER*/
+.footbox {
+  background-color: #070606;
+  color: #b9b3b3;
+  max-width: none;
+  max-height: 350px;
+  width: none;
+  height: 100%;
+}
+.footbox__contacto, .footbox__pago {
+  padding-top: 25px;
+  padding-right: none;
+  padding-bottom: 25px;
+  padding-left: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footbox__title {
+  font-size: 18px;
+}
+.footbox__info {
+  margin-top: none;
+  margin-right: none;
+  margin-bottom: 0;
+  margin-left: none;
+  font-size: 14px;
+}
+.footbox__icono {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+/*MEDIA QUERIES TABLET*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /*HEADER*/
+  .topbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .topbar__menu {
+    margin-top: none;
+    margin-right: none;
+    margin-bottom: none;
+    margin-left: 10px;
+  }
+  .topbar__links {
+    width: auto;
+    height: none;
+    margin-top: none;
+    margin-right: none;
+    margin-bottom: none;
+    margin-left: 10px;
+  }
+  .topbar__enlace {
+    margin: 8px;
+  }
+  /*INDEX - MAIN*/
+  /*Categorias*/
+  .bloque__titulo {
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 20px;
+  }
+  .bloque__recuadro {
+    width: none;
+    height: 200px;
+  }
+  .bloque__recuadro img {
+    max-width: 250px;
+    max-height: none;
+  }
+  .bloque__recuadro figcaption {
+    font-size: 18px;
+  }
+  /*PRODUCTOS*/
+  .productos__titulo {
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 20px;
+  }
+  .tarjeta__contenedor {
+    max-width: 250px;
+    max-height: none;
+    width: 100px;
+    height: none;
+  }
+  .tarjeta__contenedor img {
+    max-width: 250px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+  }
+  .tarjeta__nombre {
+    font-size: 18px;
+  }
+  .tarjeta__boton {
+    width: 200px;
+    height: none;
+  }
+  /*NOSOTROS*/
+  .nosotros__titulo {
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 20px;
+  }
+  .nosotros__intro p {
+    font-size: 20px;
+  }
+  .nosotros__intro img {
+    width: 90%;
+    height: 300px;
+  }
+  .nosotros__descripcion p {
+    font-size: 16px;
+    margin: 20px 60px;
+  }
+  /*PREGUNTAS FRECUENTES*/
+  .preguntas__titulo {
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 20px;
+  }
+  .preguntas__contenido h3 {
+    font-size: 18px;
+  }
+  .preguntas__contenido p {
+    font-size: 16px;
+  }
+  /*CONTACTO*/
+  .contacto__title {
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 20px;
+  }
+  .contacto__boton {
+    width: none;
+    height: 38px;
+    padding: 10px;
+  }
+  /*ASIDE*/
+  .apartado__img {
+    height: auto;
+  }
+  /*FOOTER*/
+  .footbox {
+    max-width: none;
+    max-height: 300px;
+  }
+  .footbox__contacto, .footbox__pago {
+    padding-top: 20px;
+    padding-right: none;
+    padding-bottom: 20px;
+    padding-left: none;
+  }
+  .footbox__title {
+    font-size: 16px;
+  }
+  .footbox__info {
+    font-size: 14px;
+  }
+  .footbox__icono {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+/*MEDIA QUERIES MOBILE*/
+@media (max-width: 767px) {
+  /*HEADER*/
+  .topbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .topbar__menu {
+    margin-top: none;
+    margin-right: none;
+    margin-bottom: none;
+    margin-left: 10px;
+  }
+  .topbar__links {
+    width: auto;
+    height: none;
+    margin-top: none;
+    margin-right: none;
+    margin-bottom: none;
+    margin-left: 10px;
+  }
+  .topbar__enlace {
+    margin: 8px;
+  }
+  /*INDEX - MAIN*/
+  /*Categorias*/
+  .bloque__titulo {
+    margin-bottom: 20px;
+    padding: 6px;
+    font-size: 16px;
+  }
+  .bloque__recuadro {
+    width: none;
+    height: 250px;
+  }
+  .bloque__recuadro img {
+    max-width: 200px;
+    max-height: none;
+  }
+  .bloque__recuadro figcaption {
+    font-size: 16px;
+  }
+  /*PRODUCTOS*/
+  .productos__titulo {
+    margin-bottom: 20px;
+    padding: 6px;
+    font-size: 16px;
+  }
+  .tarjeta__contenedor {
+    max-width: 200px;
+    max-height: none;
+    width: 100%;
+    height: none;
+  }
+  .tarjeta__contenedor img {
+    max-width: 200px;
+    max-height: 150px;
+    width: 100%;
+    height: 100%;
+  }
+  .tarjeta__nombre {
+    font-size: 16px;
+  }
+  .tarjeta__boton {
+    width: 150px;
+    height: none;
+  }
+  /*NOSOTROS*/
+  .nosotros__titulo {
+    margin-bottom: 20px;
+    padding: 6px;
+    font-size: 16px;
+  }
+  .nosotros__intro p {
+    font-size: 18px;
+  }
+  .nosotros__intro img {
+    width: 90%;
+    height: 250px;
+  }
+  .nosotros__descripcion p {
+    font-size: 16px;
+    margin: 20px 40px;
+  }
+  /*PREGUNTAS FRECUENTES*/
+  .preguntas__titulo {
+    margin-bottom: 20px;
+    padding: 6px;
+    font-size: 16px;
+  }
+  .preguntas__contenido h3 {
+    font-size: 16px;
+  }
+  .preguntas__contenido p {
+    font-size: 14px;
+  }
+  /*CONTACTO*/
+  .contacto__title {
+    margin-bottom: 20px;
+    padding: 6px;
+    font-size: 16px;
+  }
+  .contacto__boton {
+    width: none;
+    height: 35px;
+    padding: 8px;
+  }
+  /*ASIDE*/
+  .apartado__img {
+    height: auto;
+  }
+  /*FOOTER*/
+  .footbox {
+    max-width: none;
+    max-height: 250px;
+  }
+  .footbox__contacto, .footbox__pago {
+    padding-top: 10px;
+    padding-right: none;
+    padding-bottom: 10px;
+    padding-left: none;
+  }
+  .footbox__title {
+    font-size: 14px;
+  }
+  .footbox__info {
+    font-size: 12px;
+  }
+  .footbox__icono {
+    max-width: 30px;
+    max-height: 30px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
