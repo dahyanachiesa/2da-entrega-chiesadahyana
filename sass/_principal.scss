@@ -10,41 +10,37 @@
     }
 }    
 /*Categorias*/
-.bloque{    
-    &__titulo {
+.categorias{    
+    &__titulo{
         @include titulos_desktop;
+        @include margenes (none, none, 70px, none);
     }
-    &__contenedor {
+}
+.bloque{
+    &__recuadro{
+        @include tamaño-maximo (280px, 280px);
         display: flex;
-        flex-wrap: wrap; 
-        justify-content: center; 
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 30px;
     }
-    &__categoria {    
-        text-align: center; 
-        @include dimensiones (40%, none);
-            a{    
-                color: $enlaces-categorias;
-                font-weight: bold;
-            }          
-    }
-    &__recuadro {    
-        @include margenes (none, 20px, o, none);
-        display: inline-block;
-        @include dimensiones (100%, 250px);
-            &__recuadro--aumento {
-                transition: transform 0.5s;                     
-            }
-            img{
-                @include tamaño-maximo (300px, none);
-                @include dimensiones (100%, auto)
-            }
-            figcaption{
-                font-size: 20px;
-            }
-    }
-    .recuadro--aumento:hover{
+    &__recuadro:hover{
+        transition: transform 0.5s;
         transform: scale(1.1);
-    }  
+        border: 1px solid black;
+    }
+    &__aumento{        
+        img {
+            @include dimensiones (200px, 200px);
+        }
+        a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+
 }
 /*PRODUCTOS*/
 .productos{

@@ -99,54 +99,37 @@
                 </div>
             </div>
         </div>
-        <!--categorias-->
-        <div class="bloque">
-            <h1 class="bloque__titulo">CATEGORÍAS</h1>
-            <section class="bloque__contenedor">
-                <article class="bloque__categoria">
-                    <a href="#"> <!-- Enlace para la categoría de Sofás -->
-                        <figure class="bloque__recuadro">
-                            <div class="recuadro--aumento">
-                                <img src="./assets/sofa-cala.jpg" alt="Sofa Cala">
-                                <figcaption class="bloque__descripcion">Sofás</figcaption>
-                            </div>
-                        </figure>
-                    </a>
-                </article>
-                <article class="bloque__categoria">
-                    <a href="#"> <!-- Enlace para la categoría de Esquineros -->
-                        <figure class="bloque__recuadro">
-                            <div class="recuadro--aumento">
-                                <img src="./assets/esquinero-maraok.png" alt="Esquinero Mara">
-                                <figcaption class="bloque__descripcion">Esquineros</figcaption>
-                            </div>
-                        </figure>
-                    </a>
-                </article>
-            </section>
-            <section class="bloque__contenedor">
-                <article class="bloque__categoria">
-                    <a href="#"> <!-- Enlace para la categoría de Individuales -->
-                        <figure class="bloque__recuadro">
-                            <div class="recuadro--aumento">
-                                <img src="./assets/individual-frida.jpg" alt="Individual Frida">
-                                <figcaption class="bloque__descripcion">Individuales</figcaption>
-                            </div>
-                        </figure>
-                    </a>
-                </article>
-                <article class="bloque__categoria">
-                    <a href="#"> <!-- Enlace para la categoría de Puffs -->
-                        <figure class="bloque__recuadro">
-                            <div class="recuadro--aumento">
-                                <img src="./assets/puff-alice.png" alt="Puff Alice">
-                                <figcaption>Puffs</figcaption>
-                            </div>
-                        </figure>
-                    </a>
-                </article>
-            </section>
+        <!--Categorias-->
+        <div class="categorias">
+            <h1 class="categorias__titulo">CATEGORIAS</h1>
         </div>
+        <section class="container bloque">
+            <article class="row justify-content-evenly bloque__contenido">                    
+                <div class="card col-12 col-sm-12 col-md-4 col-lg-4 bloque__recuadro">
+                    <div class="bloque__aumento">
+                        <img src="./assets/sofa-cala.jpg" class="card-img-top" alt="Sofa Cala">
+                        <div class="card-body">
+                            <!--Los <a> tienen href= #, porque la idea es que llevarian a una pestaña donde esten agrupados todos los sillones de la misma categoria-->
+                            <a href="#" class="card-title tarjeta__nombre">Sofás</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-12 col-md-4 col-lg-4  bloque__recuadro">
+                    <div class="bloque__aumento">
+                        <img src="./assets/esquinero-cubo.jpg" class="card-img-top" alt="Esquinero Cubo">
+                        <div class="card-body">
+                            <a href="#" class="card-title tarjeta__nombre">Esquineros</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-12 col-sm-12 col-md-4 col-lg-4 bloque__recuadro">
+                    <div class="bloque__aumento">
+                        <img src="./assets/individual-frida.jpg" class="card-img-top" alt="Individual Frida">
+                        <a href="#" class="card-title tarjeta__nombre">Individuales</a>
+                    </div>  
+                </div>
+            </article>
+        </section>
     </main>
     <aside class="apartado">    
         <div class="apartado__contenedor">
