@@ -40,7 +40,17 @@
             font-weight: bold;
         }
     }
-
+}
+/*BREADCRUMB*/
+.guia{
+    &__link{        
+        color: rgb(117, 114, 114);
+        text-decoration: none;   
+    }
+    &__link:hover{
+        color: black;
+        text-decoration: underline;
+    }
 }
 /*PRODUCTOS*/
 .productos{
@@ -81,11 +91,12 @@
         text-align: center;
         @include orden;
         p {
-            font-size: 25px;
+            font-size: 22px;
+            font-weight: bold;
             @include margenes (none, none, 20px, none);
         }
         img {    
-            @include dimensiones (90%, 450px)
+            @include dimensiones (80%, 450px)
         }
     }
     &__descripcion{
@@ -95,6 +106,9 @@
             text-align: justify;
         }
     }
+    &__final{
+        font-weight: bold;
+    }
 }
 /*PREGUNTAS FRECUENTES*/
 .preguntas{
@@ -102,7 +116,7 @@
         @include titulos_desktop;   
     }
     &__contenido {
-        @include margenes (20px, 60px, 20px, 60px);
+        @include margenes (20px, 80px, 20px, 80px);
         h3{
             font-size: 20px;
             text-align: start;

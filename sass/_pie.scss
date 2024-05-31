@@ -1,7 +1,7 @@
 /*FOOTER*/
 .footbox {
     background-color: $fondo-pie;
-    color: $color-texto-pie;
+    color: $color-titulos-pie;
     @include tamaño-maximo (none, 350px);
     @include dimensiones (none, 100%);
     &__contacto, &__pago{
@@ -9,16 +9,14 @@
         @include orden;
         text-align: center;
     }
-
     &__title {
         font-size: map-get($titulo-pie, tamaño-desktop);
     }
-
     &__info {
         @include margenes (none, none, 0, none);
         font-size: map-get($info-pie, size-1);
-    }
-    
+        color: $color-info-pie;
+    }   
     &__icono {
         @include tamaño-maximo (50px, 50px);
     }

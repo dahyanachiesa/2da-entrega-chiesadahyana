@@ -1,7 +1,7 @@
 /*MEDIA QUERIES TABLET*/
 
 @media (min-width: 768px) and (max-width: 991px) { 
-/*HEADER*/
+    /*HEADER*/
     .topbar {
         display: flex;
         flex-direction: column;
@@ -17,7 +17,7 @@
             }
     }        
     /*INDEX - MAIN*/
-        /*Categorias*/
+    /*Categorias*/
     .categorias{
         &__titulo{
             @include titulos_tablet;
@@ -66,9 +66,10 @@
         &__intro{
             p{
                 font-size: 20px;
+                @include margenes (none, 50px, none, 50px);
             }
             img {    
-                @include dimensiones (90%, 300px);
+                @include dimensiones (85%, 300px);
             }
         }
         &__descripcion {
@@ -84,6 +85,7 @@
             @include titulos_tablet;
         }
         &__contenido{
+            @include margenes (20px, 70px, 20px, 70px);
             h3{
                 font-size: 18px;
             }
@@ -97,10 +99,15 @@
         &__title {
             @include titulos_tablet;
         }
-
+        &__casilla--nombre,
+        &__casilla--correo, 
+        &__casilla--mensaje {  
+        @include tamaño-maximo (350px, none);
+        }
         &__boton {
-            @include dimensiones (none, 38px);
-            padding: 10px;
+            @include tamaño-maximo (350px, none);
+            @include dimensiones (none, 36px);
+            padding: 8px; 
         }            
     }
     /*ASIDE*/
@@ -126,12 +133,12 @@
         }            
     }
 }        
-    /*MEDIA QUERIES MOBILE*/        
+    /*MEDIA QUERIES MOBILE*/  
 @media (max-width:767px){
     /*HEADER*/
     .topbar {
         display: flex;
-        flex-direction: column;            
+        flex-direction: column;         
         &__menu {
             @include margenes (none, none, none, 10px);
         }                
@@ -144,26 +151,26 @@
         }
     }        
     /*INDEX - MAIN*/
-        /*Categorias*/
-        .categorias{
-            &__titulo{
-                @include titulos_mobile
-            }
+    /*Categorias*/
+    .categorias{
+        &__titulo{
+            @include titulos_mobile
         }
-        .bloque{
-            &__recuadro{
-                @include tamaño-maximo (250px, 180px);
-                margin-bottom: 20px;             
-            }
-            &__aumento{
-                img{
-                    @include dimensiones (200px, 120px);                    
-                }    
-                a{
-                    font-size: 14px;
-                }       
-            }           
+    }
+    .bloque{
+        &__recuadro{
+            @include tamaño-maximo (250px, 180px);
+            margin-bottom: 20px;             
         }
+        &__aumento{
+            img{
+                @include dimensiones (200px, 120px);                    
+            }    
+            a{
+                font-size: 14px;
+            }       
+        }           
+    }
     /*PRODUCTOS*/    
     .productos{
         &__titulo{
@@ -180,7 +187,8 @@
             }
         }
         &__nombre{
-            font-size: 16px;
+            font-size: 14px;
+            text-align: center;
         }
         &__boton{
             @include dimensiones (150px, none);
@@ -193,15 +201,16 @@
         }
         &__intro{
             p{
-                font-size: 18px;
+                font-size: 16px;
+                @include margenes (none, 50px, none, 50px);
             }
             img {    
-                @include dimensiones (90%, 250px);
+                @include dimensiones (85%, 250px);
             }
         }
         &__descripcion{
             p {
-                font-size: 16px;
+                font-size: 14px;
                 margin: map-get($margin-p-nosotros, mobile);
             }
         }
@@ -212,6 +221,7 @@
             @include titulos_mobile;
         }
         &__contenido{
+            @include margenes (20px, 60px, 20px, 60px);
             h3{
                 font-size: 16px;
             }
@@ -225,8 +235,14 @@
         &__title {
             @include titulos_mobile;
         }
+        &__casilla--nombre,
+        &__casilla--correo, 
+        &__casilla--mensaje {  
+        @include tamaño-maximo (300px, none);
+        }
         &__boton {
-            @include dimensiones (none, 35px);
+            @include tamaño-maximo (300px, none);
+            @include dimensiones (none, 34px);
             padding: 8px; 
         }
     }

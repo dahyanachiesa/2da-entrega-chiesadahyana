@@ -3,6 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Opengraph-->
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://dahyanachiesa.github.io/3ra-entrega-chiesadahyana/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Productos - Praga Home & Deco">
+    <meta property="og:description" content="Explora nuestra amplia selección de sofás, individuales y esquineros. Descubre estilos únicos, desde clásicos hasta modernos, diseñados para cualquier gusto y espacio.">
+    <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/76cbfaed-4843-4261-9ef6-d4409f5db35e.jpg?token=shtYjkGwbhQYG7KC5lQD7V3xDUbITx2R0rJV86pXplY&height=576&width=768&expires=33253022918">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="dahyanachiesa.github.io">
+    <meta property="twitter:url" content="https://dahyanachiesa.github.io/3ra-entrega-chiesadahyana/">
+    <meta name="twitter:title" content="Productos - Praga Home & Deco">
+    <meta name="twitter:description" content="Explora nuestra amplia selección de sofás, individuales y esquineros. Descubre estilos únicos, desde clásicos hasta modernos, diseñados para cualquier gusto y espacio.">
+    <meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/76cbfaed-4843-4261-9ef6-d4409f5db35e.jpg?token=shtYjkGwbhQYG7KC5lQD7V3xDUbITx2R0rJV86pXplY&height=576&width=768&expires=33253022918">
+    <!--Keywords-->
+    <meta name="keywords" content="productos, sofá moderno, sofá clásico, esquinero moderno, esquinero clásico, individuales modernos, sillón esquinero, sillón individual, muebles para el hogar, comprar sofás, sofá Baires, sofá Cala, sofá Canela, sofá Gabo, sofá Milano, sofá Rose, sofá Zeus, esquinero Cubo, esquinero Delfina, esquinero Mila, esquinero Tommy, esquinero Velvet, esquinero Zoe, individual Anna, individual Denver, individual Frida, individual Indo, individual Lola">
+    <!--Description-->
+    <meta name="description" content="Explora nuestra amplia línea de sofás, individuales y esquineros. Descubre estilos únicos, desde clásicos hasta modernos, diseñados para cualquier gusto y espacio.">
     <!--fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +29,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--estilos-->
     <link rel="stylesheet" href="../css/main.css">
-    <title>Praga Home & Deco</title>
+    <title>Productos - Praga Home & Deco</title>
 </head>
 <body>
     <header class="topbar"> 
@@ -49,7 +67,6 @@
                                 <li><a class="dropdown-item" href="#">Sofás</a></li>
                                 <li><a class="dropdown-item" href="#">Esquineros</a></li>
                                 <li><a class="dropdown-item" href="#">Individuales</a></li>
-                                <li><a class="dropdown-item" href="#">Puffs</a></li>
                                 <li><a class="dropdown-item" href="productos.html">Todos los productos</a></li>
                             </ul>
                         </li>
@@ -70,6 +87,15 @@
     <main>
         <div class="productos">
             <h1 class="productos__titulo">PRODUCTOS</h1>
+        </div>
+        <!--Breadcrumb-->
+        <div class="guia">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb m-4">
+                    <li class="breadcrumb-item"><a href="../index.html" class="guia__link">Inicio</a></li>
+                    <li class="breadcrumb-item active text-black" aria-current="page">Productos</li>
+                </ol>
+            </nav>
         </div>
         <section class="container tarjeta">
             <article class="row justify-content-evenly gap-3 p-2">                    
@@ -205,13 +231,14 @@
     <footer>
         <div class="footbox">    
             <article class="footbox__contacto">
-                <h3 class="footbox__title">SIGAMOS CONECTADOS</h3>
-                <p class="footbox__info">Whatsapp: 351-0000000</p>
+                <h5 class="footbox__title">SIGAMOS CONECTADOS</h3>
+                <p class="footbox__info">WhatsApp: 351-0000000</p>
                 <p class="footbox__info">Instagram: praga.homedeco</p>
                 <p class="footbox__info">Email: pragahomedeco@gmail.com</p>
+                <p class="footbox__info">Dirección: Sarmiento 61, Córdoba Capital</p>
             </article>        
             <article class="footbox__pago">
-                <h3 class="footbox__title">MEDIOS DE PAGO</h3>
+                <h5 class="footbox__title">MEDIOS DE PAGO</h3>
                 <div class="footbox__iconos">
                     <img class="footbox__icono" src="../assets/icono-visa.png" alt="Icono visa">
                     <img class="footbox__icono" src="../assets/icono-mastercard.png" alt="Icono mastercard">

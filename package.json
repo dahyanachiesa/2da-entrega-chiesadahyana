@@ -8,5 +8,5 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "En la página de inicio (http://127.0.0.1:5501/index.html#) he creado un Carrousel utilizando Boostrap, y del mismo modo las secciones de \"Categorias\". Estas ultimas tienen efecto animación."
 }
